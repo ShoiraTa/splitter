@@ -1,10 +1,13 @@
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import Navbar from './components/Navbar';
+import MainContent from './components/MainContent';
 
-function App() {
-  return (
-    <div className="App">
-      <p >Hello</p>
-    </div>
+class App extends Component {
+  render = () => (
+    <Fragment>
+      <Navbar />
+      <MainContent />
+    </Fragment>
   );
 }
 
