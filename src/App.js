@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from 'react';
-import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
-import ShoppingCart from './components/ShoppingCart';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render = () => (
-    <Fragment>
-      <Navbar />
-      <ShoppingCart />
-    </Fragment>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+      </Routes>
+    </Router>
   );
 }
 
