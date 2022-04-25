@@ -13,7 +13,7 @@
 
 ## Live demo
 
-(Follow the link)[https://vacay-home.netlify.app/]
+(Follow the link)[http://shoirata.github.io/splitter]
 
 ## Preview
 

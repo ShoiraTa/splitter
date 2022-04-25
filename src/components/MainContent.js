@@ -12,7 +12,6 @@ class MainContent extends Component {
       tipsPercentageCustom: 0,
       bill: '',
       peopleNum: 1,
-
       tipAmount: (0.0).toFixed(2),
       totalAmount: (0.0).toFixed(2),
     };
