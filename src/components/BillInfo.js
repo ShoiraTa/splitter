@@ -45,7 +45,7 @@ class BillInfo extends Component {
                 className="tip-input"
                 placeholder="Custom"
                 onChange={(e) => this.props.handleCustomTip(e.target.value)}
-                value={this.props.customTipVal}
+                style={{ fontSize: '1rem' }}
               />
             </div>
           </div>
