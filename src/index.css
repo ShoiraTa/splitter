@@ -192,6 +192,7 @@ h1{
   }
   .splitter-container-sm {
     grid-template-columns: auto;
+    border-radius: 25px 25px 0 0;
   }
   .splitter-right{
     margin-top: 1rem;

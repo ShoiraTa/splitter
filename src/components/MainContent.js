@@ -20,9 +20,10 @@ class MainContent extends Component {
 
   calculate = () => {
     if (this.state.selectedTip != 0 && this.state.bill != 0 && this.state.peopleNum != 0) {
+      let totalTip = (this.state.bill / 100) * this.state.selectedTip;
       this.setState({
-        tipAmount: (((this.state.bill / 100) * this.state.selectedTip) / this.state.peopleNum).toFixed(2),
-        totalAmount: (this.state.bill / this.state.peopleNum).toFixed(2),
+        tipAmount: (totalTip / this.state.peopleNum).toFixed(2),
+        totalAmount: (parseInt(this.state.bill, 10) + totalTip) / this.state.peopleNum,
       });
     }
   };
