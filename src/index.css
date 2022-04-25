@@ -21,6 +21,10 @@ span{
   color: var(--Dark-grayish-cyan);
 }
 
+.text-orange{
+  color: rgb(165, 56, 42)!important;
+}
+
 .splitter-container-xl{
   background-color: var(--Light-grayish-cyan);
   height: 100vh;
@@ -28,12 +32,15 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .splitter-container-sm{
   background-color: var(--White);
   border-radius: 25px;
-  padding: 1.5rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .logo{
@@ -45,18 +52,14 @@ span{
 }
 .splitter-left{
   height: 100%;
-  width: 50%;
-  padding: 1.3rem;
+  padding: 1rem;
   margin: 0 1rem 0 0;;
 }
 
 .splitter-right{
   background-color: var(--Very-dark-cyan);
   height: 100%;
-  width: 50%;
   border-radius: 15px;
-  padding: 1rem;
-  margin: 0 1rem 0 0;
   padding: 2.5rem 
 }
 
@@ -68,7 +71,7 @@ span{
 }
 
 .bill-form-control label {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   font-weight: 700;
   color: var(--Dark-grayish-cyan);
@@ -94,9 +97,11 @@ span{
 }
 
 .tip-select{
-  margin: 2.2rem 0;
+  margin: 2rem 0;
 }
+
 .tips-container{
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
@@ -109,9 +114,9 @@ span{
     align-items: center;
     justify-content: center;
     color: var(--Very-light-grayish-cyan);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
-    height: 3.3rem;
+    height: 3.1rem;
 }
 .tip:hover{
   background-color: var(--Strong-cyan);
@@ -149,7 +154,7 @@ h1{
   color: var(--Very-light-grayish-cyan);
 }
 .total-amount{
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--Strong-cyan);
 }
 
@@ -169,7 +174,43 @@ h1{
   border: none;
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
-  padding: 0.6rem;
+  padding: 0.55rem;
   border-radius: 5px;
   font-size: 1.3rem;
+}
+
+@media (max-width: 700px) { 
+  .splitter-container-xl{
+    height: auto;
+    padding: 0;
+  }
+
+
+  .logo{
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+  .splitter-container-sm {
+    grid-template-columns: auto;
+  }
+  .splitter-right{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    height: 300px;
+  }
+
+   .splitter-left{
+    margin: 0;
+    padding: 0;
+   }
+   .tips-container {
+    grid-template-columns: 1fr 1fr;
+   }
+ }
+
+ @media only screen and (min-width: 990px) and (max-width: 1100px) { 
+ .col-lg-8 {
+  flex: 0 0 auto;
+  width: 77.66666667%!important;
+}
 }

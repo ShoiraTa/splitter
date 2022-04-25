@@ -10,7 +10,7 @@ class ResultInfo extends Component {
               <h1>Tip amount</h1>
               <span>/ person</span>
             </div>
-            <div className="total-amount">$0.00</div>
+            <div className="total-amount">${this.props.tipAmount}</div>
           </div>
 
           <div className="amount">
@@ -18,7 +18,7 @@ class ResultInfo extends Component {
               <h1>Total</h1>
               <span>/ person</span>
             </div>
-            <div className="total-amount">$0.00</div>
+            <div className="total-amount">${this.props.totalAmount}</div>
           </div>
         </div>
 
