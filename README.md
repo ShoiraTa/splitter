@@ -13,7 +13,7 @@
 
 ## Live demo
 
-(Follow the link)[http://shoirata.github.io/splitter]
+[Follow the link](http://shoirata.github.io/splitter)
 
 ## Preview
 
